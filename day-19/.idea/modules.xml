@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/day-19.iml" filepath="$PROJECT_DIR$/.idea/day-19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../day-19-1/.idea/day-19-1.iml" filepath="$PROJECT_DIR$/../day-19-1/.idea/day-19-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../day-20/.idea/day-20.iml" filepath="$PROJECT_DIR$/../day-20/.idea/day-20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../day-20-list/.idea/day-20-list.iml" filepath="$PROJECT_DIR$/../day-20-list/.idea/day-20-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../day-22/.idea/day-22.iml" filepath="$PROJECT_DIR$/../day-22/.idea/day-22.iml" />
+    </modules>
+  </component>
+</project>
