@@ -6,10 +6,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="day-19-1" />
-    <orderEntry type="module" module-name="day-20" />
-    <orderEntry type="module" module-name="day-20-list" />
-    <orderEntry type="module" module-name="day-22" />
-    <orderEntry type="module" module-name="day-23" />
   </component>
 </module>

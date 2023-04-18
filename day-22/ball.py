@@ -1,5 +1,6 @@
 from turtle import Turtle
 from score import Score
+
 score = Score()
 
 
@@ -8,15 +9,16 @@ class Ball(Turtle):
         super().__init__()
         self.ball = Turtle(shape='circle')
         self.ball.color('white')
-        self.ball.goto(0,0)
+        self.ball.goto(0, 0)
         self.ball.shapesize(stretch_wid=1.8)
         self.ball.penup()
         self.move_x = 10
         self.move_y = 10
         self.move_speed = 0.1
-       # self.speed('fastest')
-        #self.ball.speed('slowest')
-        #self.ball.goto(350, 350)
+
+    # self.speed('fastest')
+    # self.ball.speed('slowest')
+    # self.ball.goto(350, 350)
 
     def move(self):
         new_x = self.ball.xcor() + self.move_x
@@ -34,23 +36,22 @@ class Ball(Turtle):
 
     def bounce_x(self):
         self.move_x *= -1
-        #self.move_speed *= 0.00001
+        # self.move_speed *= 0.00001
 
     def collision_paddle(self, paddle):
         if self.ball.distance(paddle) < 60 and (self.ball.xcor() < -300 or self.ball.xcor() > 300):
+            self.move_speed *= 0.6
             self.bounce_x()
         elif self.ball.xcor() > 350:
             self.ball.goto(0, 0)
-            #self.move_speed = 0.1
+            # self.move_speed = 0.1
             self.bounce_x()
-            #self.move_speed = 0.1
+            self.move_speed = 0.1
             return 'l'
         elif self.ball.xcor() < -350:
             self.ball.goto(0, 0)
-            #self.move_speed = 0.1
+            # self.move_speed = 0.1
             self.bounce_x()
-            #self.move_speed = 0.1
+            self.move_speed = 0.1
             return 'r'
         return -1
-
-
