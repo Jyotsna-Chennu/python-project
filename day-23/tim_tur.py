@@ -17,5 +17,5 @@ class Timmy(Turtle):
 
     def set_turtle_position(self):
         #self.goto(0, -360)
-        self.goto(0, 300)
+        self.goto(0, -300)
 

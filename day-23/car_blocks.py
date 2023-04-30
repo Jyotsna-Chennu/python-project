@@ -12,6 +12,7 @@ class Blocks(Turtle):
         self.shapesize(stretch_len=3.5)
         self.color(choice(COLORS))
         self.move_speed = 0.1
+        self.move_blocks()
 
     def move_blocks(self):
         self.forward(5)
